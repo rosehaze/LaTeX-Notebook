@@ -1,6 +1,6 @@
 # LaTeX Bullet Journal
 
-![Title](https://github.com/rosehaze/Bullet-Journal/assets/71717036/2ca8bca1-6acd-4391-9483-dd036ba6d305)
+![latexnb png](https://github.com/rosehaze/LaTeX-Notebook/assets/71717036/f293f224-3e2f-418a-a4da-36511b9a4f07)
 
 Have you ever been sitting in a mathematics lecture and thought to yourself "I wish this LaTeX document looked more like a physical notebook?" No? Just me? Ok.
 
