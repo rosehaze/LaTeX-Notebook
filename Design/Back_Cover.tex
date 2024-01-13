@@ -1,0 +1,58 @@
+%Back Cover
+\backgroundsetup{
+contents={% 
+  \begin{tikzpicture}
+    {%Page code
+    \shade[left color=red,right color=white,rounded corners,pink,draw=black] (-3,-23) rectangle (18,3.5);
+    }
+    {%three big holes
+       \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](16.3,-0) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](16.3,-10) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](16.3,-21) circle (.4cm);
+      }
+      \foreach \fila in {0,...,33}
+    {%spiral holes
+      \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black]([xshift=590pt]current page.west|-10,-\fila*18pt) circle (.25cm);
+    }
+    \foreach \fila in {0,...,33}
+    {%spiral rings
+      \shadedraw[rounded corners, overlay, inner color=grey, outer color=black, draw=black](17.3,-18pt*\fila-4pt) rectangle (19,-18pt*\fila+4pt);
+    } 
+  \end{tikzpicture}%
+},
+scale=1,
+angle=0,
+opacity=1
+}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{}
+            
+        \vspace{0.5cm}
+        \LARGE
+        \textit{}
+            
+        \vspace{1.5cm}
+            
+        \textbf{}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        \textsc{POLARIS Mentorship Program\\
+        \large{The Ohio State University\\
+        Department of Astronomy\\
+        2020-2021}}
+            
+    \end{center}
+\end{titlepage}

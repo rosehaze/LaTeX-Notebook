@@ -1,0 +1,52 @@
+%ruled paper set up
+%Need to ask Samson for help. ifoddpage https://tex.stackexchange.com/questions/195647/use-two-different-background-images-one-in-odd-pages-and-the-other-on-even-page#195648
+
+\backgroundsetup{
+contents={%
+  \begin{tikzpicture}
+    {%Page code
+      \filldraw[rounded corners,white, draw=black] (-3,-23) rectangle (18,3.5);
+    }
+    \foreach \fila in {0,...,51}
+    {%pink lines down the page
+      \draw [line width=1pt,color=pink] 
+      (-3,21-\fila*12pt) -- ++(21,0);
+    }
+    {%left-most redline
+    \draw[overlay,color=red,line width=1pt]
+      (-.5,3.5) --  
+      (-.5,-23);
+    }
+    {%perforated pages
+    \draw[thick,dash dot, overlay,color=grey,line width=1pt]
+      (-2,3.5) --  
+      (-2,-23);
+    }
+    {%right-most pink line
+      \draw[overlay,color=pink,line width=1pt]
+      (15.3,3.5) --  
+      (15.3,-23);
+    }
+    {%three big holes
+       \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-0) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-10) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-21) circle (.4cm);
+      }
+      \foreach \fila in {0,...,33}
+    {%spiral holes
+      \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black]([xshift=25pt]current page.west|-10,-\fila*18pt) circle (.25cm);
+    }
+    \foreach \fila in {0,...,33}
+    {%spiral rings
+      \shadedraw[rounded corners, overlay, inner color=grey, outer color=black, draw=black](-3.5,-18pt*\fila-4pt) rectangle (-2.3,-18pt*\fila+4pt);
+    } 
+  \end{tikzpicture}%
+},
+scale=1,
+angle=0,
+opacity=1
+}

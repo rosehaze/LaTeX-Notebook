@@ -1,0 +1,51 @@
+%Lined paper preamble
+%import document packages
+\usepackage[utf8]{inputenc}
+\usepackage[vmargin=3cm,headheight=20
+pt,tmargin=98pt,bmargin=75pt]{geometry}
+\usepackage[english]{babel}
+\usepackage{fancyhdr,tkz-euclide,tikz,tikzpagenodes,background,hyperref,enumitem,marginnote,ifoddpage}
+\usepackage[explicit]{titlesec}
+
+\hypersetup{
+     colorlinks = true,
+     linkcolor = dred,
+     urlcolor = dpurple
+     }
+
+%Text Space formatting
+\setlist[itemize]{noitemsep, topsep=1pt}
+
+%Error Code
+\renewcommand{\headrulewidth}{0pt}
+
+%Headers
+\pagestyle{fancy}
+\rhead{12.9.20}
+\rfoot{A Cooper}
+\cfoot{\thepage}
+
+%DefineColors
+\definecolor{red}{HTML}{F7BFB4}
+\definecolor{dred}{HTML}{D5A59B}
+\definecolor{orange}{HTML}{FFD090}
+\definecolor{gold}{HTML}{E4B97F}
+\definecolor{yellow}{HTML}{FFFBAA}
+\definecolor{dyellow}{HTML}{BCB87C}
+\definecolor{green}{HTML}{B4E7B7}
+\definecolor{dgreen}{HTML}{9FCCA2}
+\definecolor{lblue}{HTML}{D5FAFF}
+\definecolor{blue}{HTML}{BDD9F6}
+\definecolor{dblue}{HTML}{A4BCD6}
+\definecolor{purple}{HTML}{B7B4F6}
+\definecolor{dpurple}{HTML}{9F9CD6}
+\definecolor{pink}{HTML}{FFE8E5}
+\definecolor{grey}{HTML}{B7BBB4}
+\definecolor{darkgrey}{HTML}{5F635E}
+\definecolor{brown}{HTML}{766a12}
+%Font Color
+\color{darkgrey}
+%"Binder" Color
+\pagecolor{dred}
+
+%V2 needs to make all even numbered pages have tab links on the right side, all odd numbered pages need to be blank. Probably can write an if statement for that.

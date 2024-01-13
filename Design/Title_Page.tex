@@ -1,0 +1,60 @@
+%Title Page
+\backgroundsetup{
+contents={% 
+  \begin{tikzpicture}
+    {%Page code
+    \shade[top color=red,bottom color=white,rounded corners,pink,draw=black] (-3,-23) rectangle (18,3.5);
+    }
+    {%three big holes
+       \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-0) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-10) circle (.4cm);
+      }
+      {
+        \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black](-1.3,-21) circle (.4cm);
+      }
+      \foreach \fila in {0,...,33}
+    {%spiral holes
+      \shadedraw[overlay,inner color=black, outer color=darkgrey, draw=black]([xshift=25pt]current page.west|-10,-\fila*18pt) circle (.25cm);
+    }
+    \foreach \fila in {0,...,33}
+    {%spiral rings
+      \shadedraw[rounded corners, overlay, inner color=grey, outer color=black, draw=black](-3.5,-18pt*\fila-4pt) rectangle (-2.3,-18pt*\fila+4pt);
+    } 
+  \end{tikzpicture}%
+},
+scale=1,
+angle=0,
+opacity=1
+}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Microlensing Lab Notebook}
+            
+        \vspace{0.5cm}
+        \Large
+        \textit{Plotting data from simulated free floating planet microlensing events \& Simulated microlensing event animation}
+            
+        \vspace{3cm}
+            
+        \textbf{\Huge Adaline Cooper}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        \textcolor{brown}
+        {
+        \textsc{The Ohio State University\\
+        \large{Department of Astronomy\\
+        POLARIS Mentorship Program\\
+        2020-2021}}
+        }
+    \end{center}
+\end{titlepage}
