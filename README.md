@@ -29,5 +29,7 @@ To use this notebook effectively, it is imparative that the links are configured
 
 ## Screenshots
 
+🚧 Under Construction 🚧
+
 ## Why?
 Back a while, I, a 20-something undergrad at OSU was introduced to the wonderful typesetting language of LaTeX. Like many other women my age, I wanted to find a way to personalize this program as much as I possibly could in the form of a bullet journal. Just like other young coders, I scoured Google and Stack Overflow for the answer to my conundrum. It was after reading [this article](https://tex.stackexchange.com/questions/188164/how-to-use-latex-to-print-a-document-to-look-like-a-lined-notebook), and [this post](https://castel.dev/post/lecture-notes-1/) that I decided to make my own. This project is so much fun and I hope you enjoy this template as much as I do.
