@@ -1,0 +1,26 @@
+% LaTeX Notebook
+
+\documentclass[10pt]{article}
+\usepackage{import,amsthm}
+\import{Design}{Pream.tex}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+\import{Design}{Title_Page.tex}
+\import{Design}{Lines.tex}
+
+\renewcommand{\contentsname}{\centering Directory}
+\tableofcontents{}
+\newpage
+
+% Sections
+\import{Sections}{Test_Section_1.tex}
+
+\import{Sections}{Test_Section_2.tex}
+
+\import{Sections}{Test_Section_3.tex}
+
+\import{Design}{Back_Cover.tex}
+\end{document}
