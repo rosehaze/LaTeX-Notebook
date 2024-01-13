@@ -1,3 +1,4 @@
+
 # LaTeX Bullet Journal
 
 ![latexnb png](https://github.com/rosehaze/LaTeX-Notebook/assets/71717036/f293f224-3e2f-418a-a4da-36511b9a4f07)
